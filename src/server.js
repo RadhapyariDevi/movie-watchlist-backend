@@ -7,6 +7,7 @@ import movieRoutes from "./routes/movieRoutes.js"
 import authRoutes from "./routes/authRoutes.js"
 
 config();
+//console.log("ENV CHECK:", process.env.DATABASE_URL);
 connectDB();
 
 const app = express();

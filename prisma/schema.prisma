@@ -9,6 +9,7 @@ generator client {
 
 datasource db {
   provider = "postgresql"
+  url      = env("DATABASE_URL")
 }
 
 //USER -> MOVIE -> WATCHLIST
@@ -21,7 +22,7 @@ model User {
 
   createdAt DateTime @default(now())
 
-  moves Movie[] @relation("MovieCreator")
+  movies Movie[] @relation("MovieCreator")
   watchlistItems WatchlistItem[]
 }
 
