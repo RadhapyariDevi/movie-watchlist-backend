@@ -2,7 +2,7 @@ import { PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient()
 
-const userId = "13c70754-0e06-4f5e-a2a2-857f6c9113a2";
+const userId = "0c4476f5-3d6b-4b2f-ba9f-198de7c1851c";
 
 const movies = [
     {
