@@ -19,7 +19,9 @@ app.use(express.urlencoded({extended:true}));
 
 
 
-
+app.get("/", (req, res) => {
+  res.send("Movie Watchlist API is running...");
+});
 app.use("/movies", movieRoutes);
 app.use("/auth", authRoutes);
 app.use("/watchlist", watchlistRoutes);
